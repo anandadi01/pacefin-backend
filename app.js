@@ -31,6 +31,9 @@ app.get("/populatedata", async (req, res) => {
     res.status(400).send({error: true, message: error.message})
   }
 })
-app.listen(8080, () => {
-  console.log("Server started successfully!");
-});
+
+// app.listen(8080, () => {
+//   console.log("Server started successfully!");
+// });
+
+module.exports = app;
